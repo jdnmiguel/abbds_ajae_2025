@@ -1,0 +1,33 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                &\multicolumn{1}{c}{Small Market}&\multicolumn{2}{c}{Large Market}     \\\cmidrule(lr){2-2}\cmidrule(lr){3-4}
+                &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\midrule
+T2              &     0.19\sym{***}&     0.25\sym{***}&     0.20\sym{***}\\
+                &   (0.04)         &   (0.04)         &   (0.04)         \\
+T3              &     0.30\sym{***}&     0.42\sym{***}&     0.30\sym{***}\\
+                &   (0.04)         &   (0.04)         &   (0.04)         \\
+T4              &     0.42\sym{***}&     0.44\sym{***}&     0.43\sym{***}\\
+                &   (0.04)         &   (0.04)         &   (0.04)         \\
+Large Market    &                  &                  &    -0.01         \\
+                &                  &                  &   (0.04)         \\
+T2 $\times$ Large Market&                  &                  &     0.05         \\
+                &                  &                  &   (0.06)         \\
+T3 $\times$ Large Market&                  &                  &     0.11\sym{**} \\
+                &                  &                  &   (0.05)         \\
+T4 $\times$ Large Market&                  &                  &     0.00         \\
+                &                  &                  &   (0.06)         \\
+\midrule
+T2=T3           &                  &                  &                  \\
+\textit{p}-value&     0.00         &     0.00         &     0.00         \\
+ T3=T4 \textit{p}-value&        0         &      .62         &        0         \\
+ T3 + T3 $\times$ Large Market = T4 + T4 $\times$ Large Market \textit{p}-value&                  &                  &      .66         \\
+Trader FE       &      Yes         &      Yes         &      Yes         \\
+Order FE        &      Yes         &      Yes         &      Yes         \\
+ \textit{N}     &      712         &      712         &     1424         \\
+ Outcome mean, T1&      .34         &      .33         &      .33         \\
+\bottomrule
+\end{tabular}
+}
